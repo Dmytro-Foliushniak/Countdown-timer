@@ -1,0 +1,89 @@
+.inputDate{
+    background-image: url('../img/main.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.inputDate__box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.inputDate__title{
+    font-size: 60px;
+    line-height: 68px;
+    margin: 0 0 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.inputDateForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar{
+    margin-bottom: 20px;
+    width: 340px;
+}
+
+.calendar .MuiInputBase-root{
+    background-color: white;
+    border-radius: 12px;
+}
+
+.inputDate__error{
+    border-radius: 12px;
+    margin: 0 0 5px;
+}
+
+.inputDate__link{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    line-height: 25px;
+    padding: 10px 15px;
+    border-radius: 12px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease;
+    text-align: center;
+}
+
+.inputDate__link-disable{
+    pointer-events: none;
+}
+
+.inputDate__btn:hover{
+    filter: saturate(4);
+}
+
+.birthday-gradient{
+    background: linear-gradient(to right, #ff5733, #ffcc00);
+}
+
+.birthday-gradient:hover{
+    filter: saturate(4);
+}
+
+.anniversary-gradient{
+    background: linear-gradient(to right, #ff93b4, #d99070);
+}
+
+.anniversary-gradient:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    filter: saturate(2);
+}
+
+.others-gradient{
+    background: linear-gradient(to right, #b28977, #94716b);
+}
+
+.others-gradient:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    filter: saturate(2);
+}

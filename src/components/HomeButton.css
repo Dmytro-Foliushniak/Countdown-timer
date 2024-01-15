@@ -1,0 +1,23 @@
+.home_box{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 3;
+}
+
+.home_btn{
+    border-radius: 50%;
+    background: linear-gradient(to right, #3498db, #2c3e50) no-repeat center center;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    justify-content: center;
+}
+
+.home_btn img {
+    display: block;
+    width: 100%;
+}

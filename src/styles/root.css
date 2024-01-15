@@ -1,0 +1,91 @@
+.rootView{
+    background-image: url("../img/main.jpg");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rootView__box{
+    display: flex;
+    flex-direction: column;
+    transform: translate(0, -65%);
+}
+
+.rootView__title{
+    font-size: 60px;
+    line-height: 68px;
+    margin: 0 0 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.rootView__list{
+    display: flex;
+    padding: 0;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.rootView__item{
+
+}
+
+.rootView__link{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    line-height: 28px;
+    padding: 10px 15px;
+    border-radius: 12px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease;
+}
+
+.rootView__link-birthColor{
+    background: linear-gradient(to right, #d45a6c, #ffbc67);
+}
+
+.rootView__link-birthColor:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    filter: saturate(2);
+}
+
+.rootView__link-newYearColor{
+    background: linear-gradient(to right, #022b3c, #66ccff);
+}
+
+.rootView__link-newYearColor:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    filter: saturate(2);
+}
+
+.rootView__link-anniColor{
+    background: linear-gradient(to right, #ff93b4, #d99070);
+}
+
+.rootView__link-anniColor:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    filter: saturate(2);
+}
+
+.rootView__link-wDayColor{
+    background: linear-gradient(to right, #d45a6c, #de8f7d);
+}
+
+.rootView__link-wDayColor:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    filter: saturate(2);
+}
+
+.rootView__link-otherColor{
+    background: linear-gradient(to right, #b28977, #94716b);
+}
+
+.rootView__link-otherColor:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    filter: saturate(2);
+}
