@@ -41,10 +41,4 @@
   },
   "devDependencies": {
     "gh-pages": "6.1.1"
-  },
-  "description": "<<<<<<< HEAD\r # Countdown-timer\r =======\r # Getting Started with Create React App",
-  "main": "index.js",
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
-}
+  }
