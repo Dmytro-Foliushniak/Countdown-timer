@@ -2,7 +2,7 @@
   "name": "project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dmytro-foliushniak.github.io/Countdown-timer",
+  "homepage": ".",
   "dependencies": {
     "@emotion/react": "^11.11.3",
     "@mui/lab": "^5.0.0-alpha.159",
