@@ -1,7 +1,7 @@
 import {DatePicker} from "@mui/x-date-pickers/DatePicker";
 import {StyledEngineProvider} from "@mui/material";
 import '../styles/InputDate.css'
-import {Link, useLocation, useNavigate} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 import {useState} from "react";
 import Alert from '@mui/material/Alert';
 import {HomeButton} from "../components/HomeButton";
