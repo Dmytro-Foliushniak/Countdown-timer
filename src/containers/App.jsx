@@ -1,7 +1,7 @@
 import {AdapterDayjs} from "@mui/x-date-pickers/AdapterDayjs";
 import {LocalizationProvider} from "@mui/x-date-pickers";
 import React, {useState} from "react";
-import {createBrowserRouter, createHashRouter, RouterProvider} from "react-router-dom";
+import {createHashRouter, RouterProvider} from "react-router-dom";
 import Root from "../pages/Root";
 import InputDate from "../pages/InputDate";
 import Countdown from "../pages/Countdown";
