@@ -1,43 +1,36 @@
-import {AdapterDayjs} from "@mui/x-date-pickers/AdapterDayjs";
-import {LocalizationProvider} from "@mui/x-date-pickers";
-import React, {useState} from "react";
-import {createBrowserRouter, RouterProvider} from "react-router-dom";
-import Root from "../pages/Root";
-import InputDate from "../pages/InputDate";
-import Countdown from "../pages/Countdown";
+import React from "react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import { LocalizationProvider } from "@mui/x-date-pickers";
+import Root from "../pages/Root/Root";
+import InputDate from "../pages/InputDate/InputDate";
+import Countdown from "../pages/Countdown/Countdown";
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Root />,
+    },
+    {
+      path: "/set-date",
+      element: (
+        <LocalizationProvider dateAdapter={AdapterDayjs}>
+          <InputDate />
+        </LocalizationProvider>
+      ),
+    },
+    {
+      path: "/countdown",
+      element: <Countdown />,
+    },
+    {
+      path: "/set-date/countdown/",
+      element: <Countdown />,
+    },
+  ]);
 
-    const [date, setDate] = useState(null);
-
-    const inputChange = (value) => {
-        setDate(value);
-    };
-
-    const router = createBrowserRouter([
-            {
-                path: '/',
-                element: <Root />,
-            },
-            {
-                path: '/date',
-                element: (
-                    <LocalizationProvider dateAdapter={AdapterDayjs}>
-                        <InputDate onChange={inputChange}/>
-                    </LocalizationProvider>
-                ),
-            },
-            {
-                path: '/date/countdown',
-                element: <Countdown date={date}/>,
-            },
-        ],
-    );
-
-
-    return (
-            <RouterProvider router={router}/>
-    );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
